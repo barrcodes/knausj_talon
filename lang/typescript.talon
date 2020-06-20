@@ -1,6 +1,6 @@
-mode: user.javascript
+mode: user.typescript
 mode: command 
-and code.language: javascript
+and code.language: typescript
 -
 tag(): user.code_operators
 tag(): user.code_comment
@@ -82,9 +82,9 @@ action(user.code_state_for_each):
 
 action(user.code_null): "null"
 
-action(user.code_private_function): ""
-action(user.code_protected_function): ""
-action(user.code_public_function): "function "
+action(user.code_private_function): "private "
+action(user.code_protected_function): "protected "
+action(user.code_public_function): "public "
 
 action(user.code_operator_indirection): ""
 action(user.code_operator_address_of): ""
