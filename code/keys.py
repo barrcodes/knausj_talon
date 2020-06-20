@@ -7,6 +7,7 @@ default_alphabet = 'air bat cap drum each fine gust harp sit jury crunch look ma
 letters_string = 'abcdefghijklmnopqrstuvwxyz'
 
 default_digits = 'zero one two three four five six seven eight nine'.split(' ')
+digit_comands = map(lambda digit: f'numb {digit}', default_digits)
 numbers = [str(i) for i in range(10)]
 default_f_digits = 'one two three four five six seven eight nine ten eleven twelve'.split(' ')
 
@@ -108,7 +109,7 @@ ctx.lists['self.symbol'] = {
     'dubquote': '"', 'double quote': '"',
 }
 
-ctx.lists['self.number'] = dict(zip(default_digits, numbers))
+ctx.lists['self.number'] = dict(zip(digit_comands, numbers))
 ctx.lists['self.arrow'] = {
     'left':  'left',
     'right': 'right',
