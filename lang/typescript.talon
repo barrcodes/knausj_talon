@@ -131,8 +131,7 @@ action(user.code_private_function):
   key(enter)
   edit.up()
   edit.line_end()
-  edit.left()
-  edit.left()
+  key(left left)
 
 action(user.code_protected_function):
   insert("protected  {}")
@@ -140,8 +139,7 @@ action(user.code_protected_function):
   key(enter)
   edit.up()
   edit.line_end()
-  edit.left()
-  edit.left()
+  key(left left)
 
 action(user.code_public_function):
   insert("public  {}")
@@ -149,8 +147,7 @@ action(user.code_public_function):
   key(enter)
   edit.up()
   edit.line_end()
-  edit.left()
-  edit.left()
+  key(left left)
 
 action(user.code_operator_indirection): ""
 action(user.code_operator_address_of): ""
@@ -230,8 +227,7 @@ state spread: "..."
   key(enter)
   edit.up()
   edit.line_end()
-  edit.left()
-  edit.left()
+  key(left left)
   user.code_type_formatter(user.text)
 
 ^state extends <user.text>$:
