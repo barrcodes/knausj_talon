@@ -134,3 +134,7 @@ clear way up:
 clear way down:
     edit.extend_file_end()
     edit.delete()
+
+# delete previous word
+wiper:
+    key(alt-backspace)
